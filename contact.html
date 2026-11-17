@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Andrew Mamposte</title>
+  <meta name="description" content="Online portfolio of Andrew Mamposte, BSIT student at Mindoro State University.">
+
+  <!-- Fonts from Google Fonts (needs internet; a backup font is used if offline) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- External stylesheet: all the design is in style.css -->
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+  <!-- ===== Header and navigation ===== -->
+  <header class="site-header" id="top">
+    <div class="logo"><a href="index.html">Andrew<span style="color:#22e5ff">.</span>M</a></div>
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html" class="current" aria-current="page">Contact</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <div class="page-title">
+      <h1>Contact Me</h1>
+      <p>Want to say hello or ask something? Send me a message or use the details below.</p>
+    </div>
+
+    <div class="contact-layout">
+
+      <!-- Contact details -->
+      <section>
+        <h2>Get in Touch</h2>
+        <ul class="contact-list">
+          <li><strong>Email</strong><a href="mailto:andrewmamposte11@gmail.com">andrewmamposte11@gmail.com</a></li>
+          <li><strong>Facebook</strong>Andrew Mamposte</li>
+          <li><strong>School</strong>Mindoro State University (MINSU)</li>
+        </ul>
+      </section>
+
+      <!-- Contact form: pressing Send opens the visitor's email app with the message filled in -->
+      <section>
+        <h2>Send a Message</h2>
+        <form id="contact-form" action="mailto:andrewmamposte11@gmail.com" method="post" enctype="text/plain">
+
+          <label for="name">Your name</label>
+          <input type="text" id="name" name="Name" required>
+
+          <label for="email">Your email</label>
+          <input type="email" id="email" name="Email" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="Message" required></textarea>
+
+          <button type="submit" class="btn">Send Message</button>
+        </form>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <p>&copy; 2026 Andrew Mamposte &middot; BSIT, Mindoro State University</p>
+  </footer>
+
+  <!-- Back-to-top button (stays at the bottom-right corner while scrolling) -->
+  <a href="#top" class="back-to-top" aria-label="Back to top">&uarr;</a>
+
+</body>
+</html>
